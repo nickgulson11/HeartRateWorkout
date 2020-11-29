@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<style>
+    #roundedbox {
+        border-radius: 25px;
+        background: #1FE2EE;
+        padding: 30px;
+        width: 500px;
+        height: 800px; 
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+        margin: auto;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        margin: 0;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        padding-top: 40px;
+
+}
+    #inputbox{
+        border-radius: 10px;
+        background: white;
+        width: 200px;
+        height: 30px;
+        margin-left: auto;
+        margin-right: auto;}
+p {
+	text-align: center;
+    font-family:'Montserrat';
+    
+    padding-bottom: 0px;
+    }
+h3 {
+    font-family: 'Montserrat';
+    text-align: left;
+
+
+
+}
+firstline {
+    text-align: center;
+    font-family:'Montserrat';
+    font-weight: 600;
+    font-size: 24px;
+    padding-bottom:20px;
+}
+
+input[type=text], select{
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: Montserrat;
+  font-size: 16px;
+}
+
+button[type=submit] {
+  width: 200px;
+  background-color: white;
+  color: #00B5BF;
+  padding: 14px 20px;
+
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-weight: bolder;
+  font-size: 16px;
+  margin-top:27px;
+}
+
+button[type=submit]:hover {
+  background-color: #00B5BF;
+  color: white;
+}
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title>OKZoomer</title>
+</head>
+<div id="roundedbox">
+    <body>
+    <firstline>Welcome to The HeartRate Tracker Workout!</firstline>
+    <p>Please Attempt to complete each amount of Jumping Jacks in 2 mintues and then immediately record your Heart Rate!</p>
+    </body>
+    <form method="post">
+        <div class="form-group">
+            <p style="padding-top:20px; text-align: left; padding-left: 50px"><label for="title">Heart Rate after 50 jumping jacks</label><br>
+            <input type="text" name="p1"
+                placeholder="130" class="form-control"
+                value="{{ request.form['p1'] }}"
+                ></input>
+            </p>
+        </div>   
+        <div class="form-group">
+            <p style="padding-top:20px; text-align: left; padding-left: 50px"><label for="title">Heart Rate after 100 jumping jacks</label><br>
+            <input type="text" name="p2"
+                placeholder="130" class="form-control"
+                value="{{ request.form['p2'] }}"
+                ></input>
+            </p>
+        </div> 
+        <div class="form-group">
+            <p style="padding-top:20px; text-align: left; padding-left: 50px"><label for="title">Heart Rate after 150 jumping jacks</label><br>
+            <input type="text" name="p3"
+                placeholder="130" class="form-control"
+                value="{{ request.form['p3'] }}"
+                ></input>
+            </p>
+        </div> 
+        <div class="form-group">
+            <p style="padding-top:20px; text-align: left; padding-left: 50px"><label for="title">Heart Rate after 200 jumping jacks</label><br>
+            <input type="text" name="p4"
+                placeholder="130" class="form-control"
+                value="{{ request.form['p4'] }}"
+                ></input>
+            </p>
+        </div> 
+        <div class="form-group">
+            <p style="padding-top:20px; text-align: left; padding-left: 50px"><label for="title">Heart Rate after 250 jumping jacks</label><br>
+            <input type="text" name="p5"
+                placeholder="130" class="form-control"
+                value="{{ request.form['p5'] }}"
+                ></input>
+            </p>
+        </div>  
+
+        <div class="form-group">
+            <p><button type="submit" class="btn btn-primary">Submit</button></p>
+        </div>
+    </form>
+</div>
+</html>
