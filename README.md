@@ -2,9 +2,9 @@
 
 Clone Repo
 
-pip install matplotlib
+pip3 install matplotlib
 
-pip install flask
+pip3 install flask
 
 export FLASK_APP=app
 
